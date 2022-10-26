@@ -11,32 +11,32 @@
 </head>
 
 <body>
-    <header class="bg-[#1D416D]">
-        <nav class="flex justify-around p-8 headerNav items-center invisible lg:visible container mx-auto">
+    <header class="bg-[#1D416D] overflow-x-hidden">
+        <nav class="flex justify-between py-8 headerNav items-center w-[95%] mx-auto">
             <div
-                class="border border-white border-opacity-10 w-12 h-12 rounded-[50px] text-center flex items-center justify-center">
+                class="border border-white border-opacity-10 w-12 h-12 rounded-[50px] text-center lg:flex lg:items-center lg:justify-center hidden">
                 <a href="#">EN</a>
             </div>
-            <a href="#">About us</a>
-            <a href="#">Contact</a>
+            <a href="#" class="hidden lg:flex ">About us</a>
+            <a href="#" class="hidden lg:flex ">Contact</a>
             <a href="#" class="visible"><img src="../../assets/Symbolslogo.png" alt="logo" /></a>
-            <div class="border border-white border-opacity-10 rounded-[50px] py-2 px-6">
+            <div class="border border-white border-opacity-10 rounded-[50px] lg:py-2 lg:px-6 hidden lg:flex ">
                 <a href="#">Portfolio Check</a>
             </div>
-            <a href="#">Menu</a>
-            <button class="visible"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.0002 20L28.0002 20" stroke="white" stroke-width="1.5" />
-                <path d="M4.00024 12H28.0002" stroke="white" stroke-width="1.5" />
-            </svg>
-        </button>
+            <a href="#" class="hidden lg:flex">Menu</a>
+            <button class="flex"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.0002 20L28.0002 20" stroke="white" stroke-width="1.5" />
+                    <path d="M4.00024 12H28.0002" stroke="white" stroke-width="1.5" />
+                </svg>
+            </button>
         </nav>
-    </header>
+      </header>
 
     <!-- ********************** Main ********************************* -->
-    <main>
-        <section class="bg-[#1D416D] py-10 lg:p-24">
-            <div class="container mx-auto">
-            <h1 class="Gilroy text-7xl md:text-[88px] leading-[94px] text-white font-semibold capitalize px-5 lg:ml-[10%]">
+    <main class="overflow-x-hidden">
+        <section class="bg-[#1D416D] py-20">
+            <div class="w-[85%] mx-auto">
+            <h1 class="Gilroy text-[45px] leading-[50px] lg:text-[88px] lg:leading-[94px] text-white font-semibold capitalize tracking-normal lg:tracking-[-2px] md:w-[80%] 2xl:w-[50%]">
                 ESG Consensus® methodology</h1>
             </div>
         </section>
@@ -44,23 +44,21 @@
         <!-- ***************** Methodology section ****************** -->
 
         <section>
-            <article class="flex flex-col gap-y-8 lg:flex-row lg:justify-around mt-10 py-10 w-[80%] m-auto">
+            <article class="flex flex-col gap-y-8 lg:flex-row lg:justify-around mt-10 py-10 w-[85%] mx-auto">
                 <div class="flex flex-col gap-y-4">
                     <p class="Poppins text-base leading-4 text-[#231F20] font-normal opacity-50 uppercase">methodology
                     </p>
-                    <h2 class="Gilroy text-6xl leading-[64px] font-semibold text-[#231F20] w-[80%]">Neutrality and
-                        Comparability</h2>
+                    <h2 class="Gilroy text-[30px] leading-[45px] lg:text-6xl lg:leading-[64px] font-semibold text-[#231F20] md:w-[95%]">Neutrality and Comparability</h2>
                 </div>
 
-                <div class="grid grid-cols-1 gap-y-5">
+                <div class="flex flex-col gap-y-5">
                     <div class="flex">
                         <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-3">
                             <path d="M2 8.72222L6.26087 13L16 2" stroke="#97AD1D" stroke-width="3" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
-                        <p class="Poppins text-2xl leading-10 font-normal text-[#231F20] ml-2">
-                            Beyond ESG ratings, meta-aggregation
-                            of key experts’ ESG views
+                        <p class="Poppins text-lg md:text-2xl leading-10 font-normal text-[#231F20] ml-2">
+                            Beyond ESG ratings, meta-aggregation of key experts’ ESG views
                         </p>
                     </div>
 
@@ -69,9 +67,8 @@
                             <path d="M2 8.72222L6.26087 13L16 2" stroke="#97AD1D" stroke-width="3" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
-                        <p class="Poppins text-2xl leading-10 font-normal text-[#231F20] ml-2">
-                        Measurement of the conversion
-                        or dispersion of opinions
+                        <p class="Poppins text-lg  md:text-2xl leading-10 font-normal text-[#231F20] ml-2">
+                        Measurement of the conversion or dispersion of opinions
                     </p>
                 </div>
 
@@ -80,24 +77,23 @@
                             <path d="M2 8.72222L6.26087 13L16 2" stroke="#97AD1D" stroke-width="3" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
-                        <p class="Poppins text-2xl leading-10 font-normal text-[#231F20] ml-2">
-                        Comprehensive representation
-                        of the market’s overall trends
+                        <p class="Poppins text-lg md:text-2xl leading-10 font-normal text-[#231F20] ml-2">
+                        Comprehensive representation of the market’s overall trends
                     </p>
                 </div>
                 </div>
             </article>
 
-            <article class="mt-10 flex flex-col gap-y-20 lg:flex lg:flex-row lg:justify-around items-center pb-10">
-                <div class="flex justify-center items-center lg:justify-start">
-                    <img src="../../assets/Graphics.png" alt="Graphics" class="w-[80%] mx-auto">
+            <article class="mt-10 flex flex-col gap-y-20 lg:flex lg:flex-row lg:justify-between items-center pb-10 w-[98%] lg:w-[85%] mx-auto">
+                <div class="flex justify-start items-center ">
+                    <img src="../../assets/Graphics.png" alt="Graphics" class="w-[80%] mx-auto lg:mx-0">
                 </div>
                 <div class="text-center w-1/2 m-auto lg:w-[15%]">
                     <p class="Poppins text-base leading-6 font-semibold">Aggregated & normalized ESG score</p>
                     <img src="../../assets/Group 1409.png" alt="arrows" class="lg:w-1/2 m-auto mt-5">
                 </div>
 
-                <div class="w-[90%] lg:w-[45%] m-auto">
+                <div class="lg:w-[45%] m-auto">
                 
                     <div class="grid grid-cols-1 gap-y-2">
                         <div>
@@ -105,12 +101,10 @@
                                 <div></div>
                                 <div class="grid grid-cols-2">
                                     <div class="bg-[#97AD1D] py-5 flex justify-center items-center">
-                                        <p class="Poppins text-base leading-6 font-semibold w-[50%] lg:w-[80%] m-auto text-center">
-                                            ESG® average</p>
+                                        <p class="Poppins text-[11px] sm:text-base leading-6 font-semibold md:w-[60%] mx-auto text-center">ESG® average</p>
                                     </div>
                                     <div class="bg-[#97AD1D] bg-opacity-70 py-5">
-                                        <p class="Poppins text-base leading-6 font-semibold text-center w-[30%] lg:w-full sm:m-auto">
-                                            Consensus® strength</p>
+                                        <p class="Poppins text-[11px] sm:text-base leading-6 font-semibold text-center md:w-[90%] sm:mx-auto">Consensus® strength</p>
                                     </div>
                                 </div>
                             </div>
@@ -160,32 +154,32 @@
         <!-- *****************section About ********************** -->
 
         <section class="bg-[#20406C]">
-            <article class="flex flex-col gap-y-8 lg:grid lg:grid-cols-2 gap-0 p-10">
+            <article class="flex flex-col gap-y-8 lg:grid lg:grid-cols-2 gap-0 py-10 w-[85%] mx-auto">
                 <div class="mt-[10%]">
                     <img src="../../assets/Image.png" alt="shapeImage">
                 </div>
                 <div class="text-left mt-[8%] grid grid-cols-1 gap-6">
-                    <h2 class="Gilroy text-6xl font-semibold leading-[64px] text-white">ESG Consensus®</h2>
-                    <p class="Poppins font-normal text-2xl leading-8 text-white w-[86%]">The ESG Consensus® follows a
+                    <h2 class="Gilroy text-[35px] leading-[40px] lg:text-6xl font-semibold lg:leading-[64px] text-white">ESG Consensus®</h2>
+                    <p class="Poppins font-normal text-2xl leading-8 text-white lg:w-[86%]">The ESG Consensus® follows a
                         reverse engineering proprietary methodology based on collective intelligence.</p>
 
 
-                    <p class="Poppins font-normal text-2xl leading-8 text-white w-[86%]">The purpose is to capture the
+                    <p class="Poppins font-normal text-2xl leading-8 text-white lg:w-[86%]">The purpose is to capture the
                         variety of ESG opinions for a company or an issuer.</p>
 
 
-                    <p class="Poppins font-normal text-2xl leading-8 text-white w-[86%]">The technique is to implicitly
+                    <p class="Poppins font-normal text-2xl leading-8 text-white lg:w-[86%]">The technique is to implicitly
                         reconstitute investable “best in class” universe from key
                         ESG experts.</p>
                 </div>
             </article>
-            <article class="flex flex-col-reverse gap-y-8 lg:grid lg:grid-cols-2 gap-0 p-10">
+            <article class="flex flex-col-reverse gap-y-8 lg:grid lg:grid-cols-2 gap-0 py-10 w-[85%] mx-auto">
                 <div class="text-center lg:mt-[5%] flex flex-col gap-6">
-                    <p class="Poppins text-2xl font-normal leading-10 text-white pl-[6%] w-[94%] text-left lg:mt-[10%]">
+                    <p class="Poppins text-2xl font-normal leading-10 text-white lg:pl-[6%] w-[94%] text-left lg:mt-[10%]">
                         Conser’s ESG consensus methodology aggregates the market views for more than 7’000 companies
                         obtained through various clusters and powered by a double dimension:</p>
 
-                    <div class="flex justify-start pl-[6%]">
+                    <div class="flex justify-start lg:pl-[6%]">
                         <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"
                             class="mt-3">
                             <circle cx="4" cy="4" r="4" fill="#97AD1D" />
@@ -196,7 +190,7 @@
                                 opinions</p>
                         </div>
                     </div>
-                    <div class="flex justify-start pl-[6%]">
+                    <div class="flex justify-start lg:pl-[6%]">
                         <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"
                             class="mt-3">
                             <circle cx="4" cy="4" r="4" fill="#97AD1D" />
@@ -225,11 +219,11 @@
                 </svg>
 
             </div>
-            <article>
+            <article class="w-[85%] mx-auto">
                 <div class="flex items-center flex-col justify-center gap-4 w-full">
                     <p class="Poppins font-normal text-base leading-4 uppercase opacity-50 text-[#231F20] mt-[9%]">Our
                         added value and unique proposal</p>
-                    <h2 class="Gilroy text-4xl lg:text-6xl font-semibold leading-[64px] text-[#231F20] text-center w-[80%]">Unbiased approach to assess and compare investment solutions</h2>
+                    <h2 class="Gilroy text-[40px] leading-[50px] lg:text-6xl font-semibold lg:leading-[64px] text-[#231F20] lg:text-center lg:w-[80%]">Unbiased approach to assess and compare investment solutions</h2>
                 </div>
                 <p class="Poppins font-normal text-2xl leading-10 text-[#231F20] text-center w-full lg:w-[50%] m-auto mt-[5%]">The
                     ESG Consensus® follows a reverse engineering proprietary methodology based on <strong> collective intelligence.</strong> The purpose is to capture the <strong>variety of ESG opinions</strong>
@@ -240,7 +234,7 @@
             <article class="mt-8">
                 <div class="m-auto w-[90%] lg:w-[80%] grid grid-cols-1 mt-10">
 
-                    <div class=" grid grid-cols-3 gap-0">
+                    <div class=" grid grid-cols-1 lg:grid-cols-3 gap-y-0">
             
                         <div class="border border-b-0 flex items-center justify-center flex-col py-[10%] px-[10%]">
                             <img src="/assets/image 10.png" alt="logo">
@@ -268,7 +262,7 @@
                         </div>
                     </div>
                 
-                    <div class="grid grid-cols-3">
+                    <div class="grid grid-cols-1 lg:grid-cols-3">
                         <div class="border flex justify-start flex-col py-3 px-3 md:py-[10%] md:px-[10%]">
                             <svg width="25" height="25" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -308,19 +302,20 @@
 
     <!-- ***************************** footer ************************************ -->
 
-    <footer class=" bg-[#102842] flex flex-col relative">
+    <footer class=" bg-[#102842] flex flex-col relative overflow-x-hidden">
 
         <section class="grid grid-cols-1 gap-0 lg:flex lg:flex-wrap border-b border-opacity-10 border-white ">
-          <article class="lg:border-r lg:basis-[30%] p-10 border-opacity-10 border-white border-b">
+          <article class="lg:border-r lg:basis-[30%] p-10 border-opacity-10 border-white border-b lg:border-b-0">
             <div class="container mx-auto">
             <img src="../../assets/Symbolslogo.png" alt="cover" class="m-auto lg:mt-[18%] lg:pt-[8%]">
-        </div>
+          </div>
           </article>
           <article class="p-10 flex flex-col gap-4 lg:w-1/2 w-full">
+            <div class="container mx-auto">
             <h2 class="Gilroy font-semibold text-4xl leading-[64px] capitalize text-white w-full">Join our newsletter</h2>
             <form class="grid grid-cols-1">
-              <div class="border-b flex justify-between border-white border-opacity-10">
-              <input type="email" placeholder="Enter your email address" class="p-[2%] bg-[#102842]">
+              <div class="border-b flex justify-between border-white border-opacity-10 relative">
+              <input type="email" placeholder="Enter your email address" class="p-[2%] bg-[#102842] focus:placeholder-shown:border-b focus:placeholder-shown:border-orange-500 focus:placeholder-shown:pt-0 focus:outline-none  ">
               <div class="mt-[2%]"> 
               <svg width="27" height="10" viewBox="0 0 27 10" fill="none" xmlns="http://www.w3.org/2000/svg"
               class="inline mr-4 w-[16%]">
@@ -329,25 +324,27 @@
             <input type="submit" value="Subscribe" class="Poppins text-white text-sm leading-[18px] font-normal">
           </div>
           </div>
-          <div class="mt-[3%] flex items-center">
-              <input type="checkbox" name="I agree with GDPR policy" checked class="bg-white opacity-10 w-6 h-6 rounded-[4px]">
-              <label class="ml-2 Poppins text-sm leading-[14px] font-normal text-white">I agree with GDPR policy</label>
+          <div class="mt-[3%] flex items-center relative">
+              <input id="check_privacy" type="checkbox" name="I agree with GDPR policy" checked class="bg-white w-6 h-6 rounded-[4px] checkbox_footer">
+              <label for="check_privacy" class="ml-2 Poppins text-sm leading-[14px] font-normal text-white label_privacy">I agree with GDPR policy</label>
             </div>
             </form>
+          </div>
           </article>
         </section>
-    
-    
+      
+      
         <section class="lg:flex lg:flex-wrap lg:gap-0 border-b border-opacity-10 border-white grid grid-cols-1 gap-0">
-          <article class="lg:border-r lg:basis-[30%] border-opacity-10 border-white grid grid-cols-1 gap-10 p-12 pb-24 border-b">
-            <p class="Poppins text-xs leading-[10px] font-normal text-white opacity-50">Contact Information</p>
-            <address class="Gilroy text-white text-lg leading-6 font-semibold w-[64%]">
+          <article class="lg:border-r lg:basis-[30%] border-opacity-10 border-white p-12 pb-24 border-b">
+            <div class="container mx-auto grid grid-cols-1 gap-10 ">
+            <p class="Poppins text-xs leading-[10px] font-normal text-white opacity-50 not-italic">Contact Information</p>
+            <address class="Gilroy text-white text-lg leading-6 font-semibold w-[64%] not-italic">
               Switzerland, Geneva, 11, bd James fazy 1201
             </address>
-            <address class="Gilroy text-white text-lg leading-6 font-semibold">
+            <address class="Gilroy text-white text-lg leading-6 font-semibold not-italic">
               <a href="mailto:info@conser.ch">info@conser.ch</a>
             </address>
-            <address class="Gilroy text-white text-lg leading-6 font-semibold">
+            <address class="Gilroy text-white text-lg leading-6 font-semibold not-italic">
               <a href="tel:+41 22 907 71 00">+41 22 907 71 00</a>
             </address>
             <nav class="flex justify-start gap-10">
@@ -362,8 +359,10 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00002 0C10.1727 0 10.4451 0.00920925 11.2984 0.0481422C12.1499 0.0869798 12.7314 0.222229 13.2403 0.420005C13.7664 0.624419 14.2125 0.897966 14.6573 1.34271C15.102 1.78748 15.3756 2.23363 15.58 2.7597C15.7778 3.26855 15.913 3.8501 15.9519 4.70161C15.9908 5.55489 16 5.82733 16 8.00002C16 10.1727 15.9908 10.4451 15.9519 11.2984C15.913 12.1499 15.7778 12.7314 15.58 13.2403C15.3756 13.7664 15.102 14.2125 14.6573 14.6573C14.2125 15.102 13.7664 15.3756 13.2403 15.58C12.7314 15.7778 12.1499 15.913 11.2984 15.9519C10.4451 15.9908 10.1727 16 8.00002 16C5.82733 16 5.55489 15.9908 4.70161 15.9519C3.8501 15.913 3.26855 15.7778 2.7597 15.58C2.23363 15.3756 1.78748 15.102 1.34271 14.6573C0.897966 14.2125 0.624419 13.7664 0.420005 13.2403C0.222229 12.7314 0.0869798 12.1499 0.0481422 11.2984C0.00920925 10.4451 0 10.1727 0 8.00002C0 5.82733 0.00920925 5.55489 0.0481422 4.70161C0.0869798 3.8501 0.222229 3.26855 0.420005 2.7597C0.624419 2.23363 0.897966 1.78748 1.34271 1.34271C1.78748 0.897966 2.23363 0.624419 2.7597 0.420005C3.26855 0.222229 3.8501 0.0869798 4.70161 0.0481422C5.55489 0.00920925 5.82733 0 8.00002 0ZM8.00002 1.44144C5.86391 1.44144 5.61088 1.4496 4.76731 1.48809C3.98732 1.52366 3.56373 1.65398 3.28183 1.76354C2.90841 1.90867 2.64191 2.08202 2.36198 2.36198C2.08202 2.64191 1.90867 2.90841 1.76354 3.28183C1.65398 3.56373 1.52366 3.98732 1.48809 4.76731C1.4496 5.61088 1.44144 5.86391 1.44144 8.00002C1.44144 10.1361 1.4496 10.3891 1.48809 11.2327C1.52366 12.0127 1.65398 12.4363 1.76354 12.7182C1.90867 13.0916 2.08205 13.3581 2.36198 13.638C2.64191 13.918 2.90841 14.0913 3.28183 14.2365C3.56373 14.346 3.98732 14.4763 4.76731 14.5119C5.61079 14.5504 5.86375 14.5586 8.00002 14.5586C10.1362 14.5586 10.3892 14.5504 11.2327 14.5119C12.0127 14.4763 12.4363 14.346 12.7182 14.2365C13.0916 14.0913 13.3581 13.918 13.638 13.638C13.918 13.3581 14.0913 13.0916 14.2365 12.7182C14.346 12.4363 14.4763 12.0127 14.5119 11.2327C14.5504 10.3891 14.5586 10.1361 14.5586 8.00002C14.5586 5.86391 14.5504 5.61088 14.5119 4.76731C14.4763 3.98732 14.346 3.56373 14.2365 3.28183C14.0913 2.90841 13.918 2.64191 13.638 2.36198C13.3581 2.08202 13.0916 1.90867 12.7182 1.76354C12.4363 1.65398 12.0127 1.52366 11.2327 1.48809C10.3891 1.4496 10.1361 1.44144 8.00002 1.44144ZM8.00002 3.89189C10.2689 3.89189 12.1081 5.73114 12.1081 8.00002C12.1081 10.2689 10.2689 12.1081 8.00002 12.1081C5.73114 12.1081 3.89189 10.2689 3.89189 8.00002C3.89189 5.73114 5.73114 3.89189 8.00002 3.89189ZM8.00002 10.6667C9.47276 10.6667 10.6667 9.47276 10.6667 8.00002C10.6667 6.52723 9.47276 5.33333 8.00002 5.33333C6.52723 5.33333 5.33333 6.52723 5.33333 8.00002C5.33333 9.47276 6.52723 10.6667 8.00002 10.6667ZM13.2304 3.72959C13.2304 4.25979 12.8006 4.68957 12.2704 4.68957C11.7402 4.68957 11.3104 4.25979 11.3104 3.72959C11.3104 3.19939 11.7402 2.76957 12.2704 2.76957C12.8006 2.76957 13.2304 3.19939 13.2304 3.72959Z" fill="white"/>
                     </svg></a>
             </nav>
+          </div>
           </article>
-          <article class="p-10 lg:flex lg:justify-around lg:basis-[70%] footerNav lg:pb-24 flex justify-between">
+          <article class="p-10 lg:basis-[70%] footerNav lg:pb-24 ">
+            <div class="container mx-auto flex justify-between lg:flex lg:justify-around">
         <nav class="grid grid-cols-1 gap-7">
           <p>Menu</p>
           <a href="#">About us</a>
@@ -385,17 +384,20 @@
             <path d="M3.5 5.5L7.5 1.5M7.5 1.5L12 5.5M7.5 1.5L7.5 14.5" stroke="white"/>
             </svg>
         </button>
+      </div>
           </article>
         </section>
-    
-    
+      
+      
         <section class="lg:flex lg:flex-wrap gap-0">
           <article class="lg:border-r lg:basis-[30%] border-opacity-10 border-white flex items-center flex-col p-12">
+            <div class="container mx-auto">
         <p class="Poppins text-xs leading-3 font-light text-white opacity-40">Copyright © 2020 Conser. All rights reserved.</p>
           </article>
           <article class="basis-[70%] border-l border-white border-opacity-10 flex justify-around p-12">
         <p class="Poppins text-xs leading-3 font-light text-white opacity-40">Language: English/French</p>
         <p class="Poppins text-xs leading-3 font-light text-white opacity-40">Created by EWM SA</p>
+      </div>
           </article>
         </section>
           </footer>

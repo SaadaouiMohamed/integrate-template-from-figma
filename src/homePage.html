@@ -12,20 +12,20 @@
 </head>
 
 <body>
-  <header class="bg-[#1D416D]">
-  <nav class="flex justify-around p-8 headerNav items-center invisible lg:visible container mx-auto">
+  <header class="bg-[#1D416D] overflow-x-hidden">
+  <nav class="flex justify-between py-8 headerNav items-center w-[95%] mx-auto">
       <div
-          class="border border-white border-opacity-10 w-12 h-12 rounded-[50px] text-center flex items-center justify-center">
+          class="border border-white border-opacity-10 w-12 h-12 rounded-[50px] text-center lg:flex lg:items-center lg:justify-center hidden">
           <a href="#">EN</a>
       </div>
-      <a href="#">About us</a>
-      <a href="#">Contact</a>
+      <a href="#" class="hidden lg:flex ">About us</a>
+      <a href="#" class="hidden lg:flex ">Contact</a>
       <a href="#" class="visible"><img src="../assets/Symbolslogo.png" alt="logo" /></a>
-      <div class="border border-white border-opacity-10 rounded-[50px] py-2 px-6">
+      <div class="border border-white border-opacity-10 rounded-[50px] lg:py-2 lg:px-6 hidden lg:flex ">
           <a href="#">Portfolio Check</a>
       </div>
-      <a href="#">Menu</a>
-      <button class="visible"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <a href="#" class="hidden lg:flex">Menu</a>
+      <button class="flex"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12.0002 20L28.0002 20" stroke="white" stroke-width="1.5" />
               <path d="M4.00024 12H28.0002" stroke="white" stroke-width="1.5" />
           </svg>
@@ -35,14 +35,14 @@
 
 <!-- ******************************** main ***************************** -->
 
-<main>
+<main class="overflow-x-hidden">
 <section class="bg-[url('../assets/Pict.png')] bg-cover min-h-[820px] lg:pb-[50%] relative bg-center">
-  <article class="flex flex-col justify-start absolute top-[15%] sm:top-[20%] md:top-[25%] left-[1%] md:left-[10%] gap-2 mix-blend-normal">
-  <p class="Poppins text-base leading-4 font-normal text-white tracking-[1px]">
+  <article class="flex flex-col justify-start absolute top-[15%] sm:top-[20%] md:top-[25%] left-[1%] md:left-[10%] gap-2 mix-blend-normal ">
+  <p class="Poppins text-sm lg:text-base leading-4 font-normal text-white tracking-[1px]">
     100% dedicated to Responsible Investment since 2007
   </p>
 
-  <h1 class="Gilroy text-[88px] leading-[94px] capitalize font-semibold text-white  tracking-[-2px] w-full sm:w-[90%] lg:w-[56%]">Building trust through ESG verification</h1>
+  <h1 class="Gilroy text-[30px] leading-[50px] lg:text-[88px] lg:leading-[94px] capitalize font-semibold text-white  tracking-[-2px] sm:w-[65%] md:w-[55%]">Building trust through ESG verification</h1>
   <div class="mt-5">
   <button class="bg-[#97AD1D] px-6 py-6 text-center rounded-[8px] text-white Gilroy text-xs leading-3 tracking-[1px] uppercase">
     Ready to Check
@@ -54,18 +54,20 @@
 
 <!-- ********************************** Introduction section **************************** -->
 
-<section class="bg-[url('../assets/Background.png')] bg-cover bg-center grid grid-cols-1 gap-6 lg:flex lg:flex-wrap lg:justify-start pb-[15%] relative sm:min-h-[820px]">
+<section class="bg-[url('../assets/Background.png')] bg-cover bg-center ">
 
+  <article class="w-[85%] mx-auto lg:w-[80%] grid grid-cols-1 gap-6 lg:flex lg:flex-wrap lg:justify-start pb-[15%] relative sm:min-h-[820px]">
   <div class=" lg:basis-[30%] flex justify-center mt-[15%] md:z-10">
     <div class="mt-2">
-    <svg width="128" height="1" viewBox="0 0 128 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="128" height="1" fill="white"/>
+      <svg width="128" height="1" viewBox="0 0 128 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="128" height="1" fill="white" />
       </svg>
     </div>
     <h2 class="Poppins font-normal text-sm leading-4 uppercase tracking-[1px] ml-4 text-white">Introduction</h2>
   </div>
-
-  <div class="grid grid-cols-1 lg:basis-[50%] text-center lg:text-left lg:mt-[15%] sm:w-[80%] sm:m-x-auto lg:ml-[15%] gap-y-10 z-10">
+  
+  <div
+    class="grid grid-cols-1 lg:basis-[50%] lg:text-left lg:mt-[15%] w-[85%] sm:w-[80%] mx-auto lg:ml-[15%] gap-y-10 z-10">
     <p class="Poppins text-2xl font-medium leading-10 text-white lg:w-[80%] mix-blend-normal text-center lg:text-left">
       The integration of environmental, social and governance (ESG)
       factors into investment strategy is becoming mainstream.
@@ -73,62 +75,64 @@
     <p class="Poppins text-2xl font-medium leading-10 text-white lg:w-[80%] mix-blend-normal text-center lg:text-left">
       Major players develop their own ESG interpretation and methodology.
     </p>
-
-    <q class="text-2xl font-bold text-white lg:w-[70%] mix-blend-normal text-center lg:text-left">With so many opinions, Investors are lost in ESG translation, they
-      are looking for clarity and simplicity.</q>
-      <div class="flex justify-center lg:justify-start mix-blend-normal">
-        <div class="border border-white rounded-[50px] border-opacity-20 w-16 h-16 flex items-center justify-center">
+  
+    <q class="text-2xl font-bold text-white lg:w-[70%] mix-blend-normal text-center lg:text-left">With so many opinions,
+      Investors are lost in ESG translation, they are looking for clarity and simplicity.</q>
+    <div class="flex justify-center lg:justify-start mix-blend-normal">
+      <div class="border border-white rounded-[50px] border-opacity-20 w-16 h-16 flex items-center justify-center">
         <svg width="30" height="30" viewBox="0 0 27 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="inline">
-          <path d="M21 1L26 5M26 5L21 9M26 5L-1.74845e-07 5" stroke="white"/>
-          </svg>
-        </div>
-      <button class="ml-5 Gilroy text-xs font-semibold text-white leading-3 uppercase tracking-[1px]">Explore more</button>
+          <path d="M21 1L26 5M26 5L21 9M26 5L-1.74845e-07 5" stroke="white" />
+        </svg>
       </div>
+      <button class="ml-5 Gilroy text-xs font-semibold text-white leading-3 uppercase tracking-[1px]">Explore
+        more</button>
+    </div>
   </div>
-  <div >
-     <div class="absolute top-[16%] left-[3%] sm:top[5%] sm:left-0 md:top-[10%] md:left-[11%] lg:top-[5%] lg:left-[20%] w-full md:w-[80%]">
-      
-  <img src="../assets/Shapehome.png" alt="shape">
- </div>
-</div>
-
+  <div>
+    <div
+      class="absolute top-[27%] left-[5%] sm:top[5%] sm:left-0 md:top-[10%] md:left-[11%] lg:top-[5%] lg:left-[20%] w-full">
+  
+      <img src="../assets/Shapehome.png" alt="shape">
+    </div>
+  </div>
+</article>
 </section>
 
 <!-- ****************** About section *********************** -->
 
 <section class="flex flex-col relative pb-[8%]">
-  <article class="text-center -z-10 lg:grid grid-cols-2 gap-0">
-    
-      <div class="mt-[-40%] sm:mt-[-35%] lg:top-[-30%] left-0 -z-20">
-        <img src="../assets/Shape.png" alt="shape" />
-        <div class="absolute top-[9%] left-2 lg:left-[10%]">
-          <h2 class="Gilroy font-bold text-[60px] leading-[64px] text-[#231F20] lg:w-1/2">
-            About Conser
-          </h2>
+  <article class="text-center -z-10 lg:flex lg:flex-wrap gap-0">
+  
+    <div class="mt-[-40%] sm:mt-[-35%] lg:mt-[-15%] left-0 -z-20 basis-[50%]">
+      <img src="../assets/Shape.png" alt="shape" />
+      <div class="absolute top-[3%] lg:top-[16%] left-2 lg:left-[10%]">
+        <h2 class="Gilroy font-bold text-[50px] lg:text-[60px] leading-[50px] lg:leading-[64px] text-[#231F20] w-1/2">
+          About Conser
+        </h2>
+      </div>
+    </div>
+    <div class="basis-[50%] w-[90%] sm:w-[80%] mx-auto mt-[12%]">
+      <p class="w-[95%] lg:w-[85%] mx-auto Poppins text-2xl font-normal leading-10 text-[#231F20] text-center lg:text-left ">
+        We are passionate people determined to enable a real integration of
+        sustainability into finance. Our commitment is to advice our clients
+        in a<strong> neutral and Independent manner.</strong> We act as
+        third-party verifier and build trust between investors and asset
+        mangers.
+      </p>
+      <p class="w-[95%] lg:w-[85%] mx-auto Poppins text-2xl font-normal leading-10 text-[#231F20] mt-8 text-center lg:text-left">
+        Our mission is to translate the ESG complexity into an accessible
+        journey and to help investors to
+        <strong>navigate the responsible investment landscape.</strong>
+      </p>
+      <button class="flex items-center justify-center mt-8 lg:justify-start ">
+        <div class="flex justify-center items-center border border-[#F0F0F0] rounded-[50px] w-16 h-16 mr-3">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="inline">
+            <path d="M24 11L29 15M29 15L24 19M29 15L2.99997 15" stroke="black" />
+          </svg>
         </div>
-      </div>
-    <div class="w-[90%] mx-auto lg:text-left lg:grid lg:grid-cols-1 gap-y-4 lg:mt-[25%]">
-    <p class="w-[85%] Poppins text-2xl font-normal leading-10 text-[#231F20]">
-      We are passionate people determined to enable a real integration of
-      sustainability into finance. Our commitment is to advice our clients
-      in a<strong> neutral and Independent manner.</strong> We act as
-      third-party verifier and build trust between investors and asset
-      mangers.
-    </p>
-    <p class="w-[85%] Poppins text-2xl font-normal leading-10 text-[#231F20]">
-      Our mission is to translate the ESG complexity into an accessible
-      journey and to help investors to
-      <strong>navigate the responsible investment landscape.</strong>
-    </p>
-    <button class="flex items-center justify-center mt-5 lg:justify-start">
-      <div class="flex justify-center items-center border border-[#F0F0F0] rounded-[50px] w-16 h-16 mr-3">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="inline">
-        <path d="M24 11L29 15M29 15L24 19M29 15L2.99997 15" stroke="black"/>
-        </svg>
-      </div>
         <span class="Gilroy uppercase text-xs text-[#231F20] font-semibold leading-3 tracking-[1px]">More about us</span>
-    </button>
-  </div>
+      </button>
+    </div>
   
   </article>
   
@@ -139,10 +143,10 @@
       <p class="Poppins font-normal text-base text-[#231F20] opacity-50">
         What we do
       </p>
-      <h2 class="Gilroy text-[60px] font-bold">Our Solutions</h2>
+      <h2 class="Gilroy text-[45px] leading-[50px] lg:leading-[64px] lg:text-[60px] font-semibold tracking-[-2px]">Our Solutions</h2>
     </div>
 
-    <p class="font-normal text-2xl text-[#231F20] leading-10 Poppins text-center lg:w-1/2 m-auto">
+    <p class="font-normal text-2xl text-[#231F20] leading-10 Poppins text-center w-[95%] lg:w-1/2 mx-auto">
       100% dedicated to responsible investment, Conser has developed a
       unique ESG digital tool to assess the sustainability profile and
       impact of portfolios. Our expertise is based on collective
@@ -155,13 +159,13 @@
 <!-- ************************** section Methodology ************************ -->
 
 <section class="bg-[#20406C] flex flex-col gap-y-8 lg:grid lg:grid-cols-2 pb-[5%]">
-  <article class="w-[80%] m-auto mt-[10%] lg:w-[70%]">
+  <article class="w-[80%] mx-auto mt-[10%] lg:w-[70%]">
     <div>
       <div>
         <p class="text-white opacity-50 text-base Poppins uppercase leading-4 font-normal tracking-[2px]">01</p>
       </div>
       <div class="w-1/2">
-        <h2 class="Gilroy text-[60px] leading-[64px] font-semibold text-white">
+        <h2 class="Gilroy text-[45px] leading-[50px] lg:text-[60px] lg:leading-[64px] font-semibold text-white">
           ESG Consensus® Methodology
         </h2>
       </div>
@@ -288,19 +292,19 @@
 
 <!-- ******************** section Advisory and Digital Tools ******************** -->
 
-<section class="bg-[#ABAD23] lg:flex lg:justify-around lg:items-center px-5 py-8">
-  <article class="flex flex-col gap-y-5 px-10">
+<section class="bg-[#ABAD23] lg:flex lg:justify-around lg:items-center lg:px-5 py-8">
+  <article class="flex flex-col gap-y-5 lg:px-10 w-[85%] mx-auto">
     <div>
       <p class="text-white text-base font-normal opacity-50 Poppins">02</p>
     </div>
     <div class="w-[70%]">
-      <h2 class="text-white font-semibold text-[60px] leading-[64px] tracking-[-2px] Gilroy">
+      <h2 class="text-white font-semibold text-[40px] lg:text-[60px] leading-[45px] lg:leading-[64px] tracking-normal lg:tracking-[-2px] Gilroy">
         Advisory and Digital Tools
       </h2>
     </div>
   </article>
 
-  <article class="mt-[9%]">
+  <article class="mt-[9%] w-[85%] mx-auto">
     <div>
       <p class="text-white text-2xl font-normal leading-10 lg:w-[70%] Poppins">
         360° approach to navigate the sustainable investment landscape.
@@ -328,7 +332,7 @@
     <p class="text-[#231F20] opacity-50 text-base font-normal leading-4 Poppins">
       Our Application
     </p>
-    <h2 class="text-[60px] font-semibold Gilroy leading-[64px] tracking-[-2px] text-[#231F20]">
+    <h2 class="text-[41px] lg:text-[60px] font-semibold Gilroy leading-[50px] lg:leading-[64px] lg:tracking-[-2px] tracking-[2px] text-[#231F20]">
       Concrete Application of Our Methodology
     </h2>
   </div>
@@ -337,7 +341,7 @@
     <div class="bg-[#F5F5F5] w-36 h-32 text-center flex items-center justify-center px-5">
       <p class="Gilroy text-[43px] leading-[43px] uppercase text-black opacity-10 font-semibold tracking-[1px]">LOGO</p>
     </div>
-    <h3 class="text-[48px] leading-[56px]  font-semibold Gilroy tracking-[-2px] text-[#231F20]">ESG Observatory</h3>
+    <h3 class="text-[35px] leading-[50px] lg:text-[48px] lg:leading-[56px] font-semibold Gilroy tracking-normal lg:tracking-[-2px] text-[#231F20]">ESG Observatory</h3>
     <p class="text-base font-normal Poppins leading-8 text-[#231F20]">
       Unique collaboration between Conser, UNCTAD and TrackInsight to monitor ESG evolution within ETF industry.
     </p>
@@ -347,7 +351,7 @@
   </article>
   <article class="lg:w-[30%] lg:mx-0 grid grid-cols-1 gap-6 w-[85%] mx-auto">
     <div><img src="../assets/Logo.png" alt="logo" /></div>
-    <h3 class="text-[48px] leading-[56px]  font-semibold Gilroy tracking-[-2px] text-[#231F20]">Swiss Sustainable Funds Awards</h3>
+    <h3 class="text-[35px] lg:text-[48px] leading-[50px] lg:leading-[56px] font-semibold Gilroy tracking-normal lg:tracking-[-2px] text-[#231F20]">Swiss Sustainable Funds Awards</h3>
     <p class="text-base font-normal Poppins leading-8 text-[#231F20]">
       Conser is the official partner for the ESG analysis of the Swiss Sustainable Funds Awards.
     </p>
@@ -370,56 +374,60 @@
 <!-- *********************** canopia section **************************** -->
 
 <section class="relative pb-[5%]">
-  <article class="w-[60%] grid grid-cols-1 gap-10 p-20">
+  <article class="lg:w-[60%] grid grid-cols-1 gap-10 py-20 w-[85%] mx-auto">
     <div class="flex flex-col gap-y-5">
       <p class="Poppins text-base opacity-50 Poppins text-[#231F20] leading-4 uppercase font-normal tracking-[1px]">
         Canopia
       </p>
-      <h2 class="Gilroy text-6xl font-semibold leading-[64px] mix-blend-normal text-[#231F20] tracking-[-2px] z-50">
+      <h2 class="Gilroy text-[45px] font-semibold leading-[50px] mix-blend-normal text-[#231F20] tracking-[-2px] z-50">
         Digital ecosystem for institutional investor
       </h2>
     </div>
-    <div class="w-[85%]">
+    <div class="lg:w-[85%]">
       <p class="Poppins font-normal text-2xl leading-10 text-[#231F20]">
-        Conser and Fundo join forces to offer institutional investors a
-        digital ecosystem that allows ESG dynamic monitoring of
-        portfolios.
+        Conser and Fundo join forces to offer institutional investors a digital ecosystem that allows ESG dynamic
+        monitoring of portfolios.
       </p>
     </div>
     <div>
       <img src="../assets/Group 1518.png" alt="Canopia logo" />
     </div>
     <div>
-      <a href="www.canopia.ch" class="text-[#231F20] text-[14px] leading-4 font-normal Poppins uppercase tracking-[1px]">www.canopia.ch</a>
+      <a href="www.canopia.ch"
+        class="text-[#231F20] text-[14px] leading-4 font-normal Poppins uppercase tracking-[1px]">www.canopia.ch</a>
     </div>
   </article>
-  <article class="absolute top-[10%] right-0 bg-[url('../assets/Backgroundcanopia.png')] min-h-[576px] w-[70%] -z-10">
-   
+  <article
+    class="absolute top-[10%] right-0 bg-[url('../assets/Backgroundcanopia.png')] min-h-[576px] lg:w-[70%] -z-10 bg-no-repeat mx-auto container">
+
   </article>
 </section>
 
 
 <!-- ************************** get started section *******************  -->
 
-<section class="lg:flex lg:flex-wrap relative">
-  <article class="bg-[#1D416D] lg:basis-[45%] flex flex-col items-center justify-center py-[8%]">
-    <div class="flex flex-col gap-6 w-[50%]">
-      <p class="text-base font-normal text-white opacity-50 Poppins leading-4 uppercase tracking-[1px] text-left">
-        Get started
-      </p>
-      <h2 class="text-5xl leading-[64px] font-semibold tracking-[-2px] text-white Gilroy">
-        What about your Portfolio?
-      </h2>
-    </div>
-    <div class="flex flex-col gap-6 w-1/2 mt-20">
-      <p class="text-white text-[18px] leading-8 font-normal Poppins">
-        Sample of checking portfolio
-      </p>
-      <img src="../assets/Img.png" alt="sample" class="w-full" />
+<section class="lg:flex lg:flex-wrap ">
+  <article class="bg-[#1D416D] lg:basis-[45%] py-[8%]">
+    <div class=" w-[85%] mx-auto flex flex-col lg:items-center justify-center">
+      <div class="flex flex-col gap-6 lg:w-[85%] mx-auto">
+        <p class="text-base font-normal text-white opacity-50 Poppins leading-4 uppercase tracking-[1px] text-left">
+          Get started
+        </p>
+        <h2
+          class="text-[40px] lg:text-5xl leading-[50px] lg:leading-[64px] font-semibold tracking-normalv lg:tracking-[-2px] text-white Gilroy">
+          What about your Portfolio?
+        </h2>
+      </div>
+      <div class="flex flex-col gap-6 lg:w-[85%] mx-auto mt-20">
+        <p class="text-white text-[18px] leading-8 font-normal Poppins">
+          Sample of checking portfolio
+        </p>
+        <img src="../assets/Img.png" alt="sample" class="w-full" />
+      </div>
     </div>
   </article>
 
-  <article class="bg-[#F6F6F6] lg:basis-[55%] flex flex-col items-center justify-center gap-y-6">
+  <article class="bg-[#F6F6F6] lg:basis-[55%] flex flex-col items-center justify-center gap-y-6 relative py-10">
     <div class="flex flex-col items-center w-[80%]">
       <p class="text-[#231F20] text-2xl font-normal leading-10 Poppins">
         Enter a minimum of 5 companies and/or governments to receive your
@@ -435,36 +443,44 @@
     </div>
     <form class="w-[80%] grid grid-cols-1 gap-6">
       <div class="flex">
-        <label class="w-[10%] border py-[3%] border-r text-center Poppins text-base leading-4 font-normal text-[#231F20] opacity-50">1.</label>
-        <input type="text" class="w-[80%] p-[2%] Poppins text-base leading-[18px] text-[#231F20] font-semibold" value="Facebook Inc">
+        <label
+          class="w-[10%] border py-[3%] border-r text-center Poppins text-base leading-4 font-normal text-[#231F20] opacity-50">1.</label>
+        <input type="text" class="w-[80%] p-[2%] Poppins text-base leading-[18px] text-[#231F20] font-semibold"
+          value="Facebook Inc">
       </div>
       <div class="flex">
-        <label class="w-[10%] border py-[3%] border-r text-center Poppins text-base leading-4 font-normal text-[#231F20] opacity-50">2.</label>
+        <label
+          class="w-[10%] border py-[3%] border-r text-center Poppins text-base leading-4 font-normal text-[#231F20] opacity-50">2.</label>
         <input type="text" class="w-[80%] p-[2%]" placeholder="Add name company...">
       </div>
       <div class="flex">
-        <label class="w-[10%] border py-[3%] border-r text-center Poppins text-base leading-4 font-normal text-[#231F20] opacity-50">3.</label>
+        <label
+          class="w-[10%] border py-[3%] border-r text-center Poppins text-base leading-4 font-normal text-[#231F20] opacity-50">3.</label>
         <input type="text" class="w-[80%] p-[2%]" placeholder="Add name company...">
       </div>
       <div class="flex">
-        <label class="w-[10%] border py-[3%] border-r text-center Poppins text-base leading-4 font-normal text-[#231F20] opacity-50">4.</label>
+        <label
+          class="w-[10%] border py-[3%] border-r text-center Poppins text-base leading-4 font-normal text-[#231F20] opacity-50">4.</label>
         <input type="text" class="w-[80%] p-[2%]" placeholder="Add name company...">
       </div>
       <div class="flex">
-        <label class="w-[10%] border py-[3%] border-r text-center Poppins text-base leading-4 font-normal text-[#231F20] opacity-50">5.</label>
+        <label
+          class="w-[10%] border py-[3%] border-r text-center Poppins text-base leading-4 font-normal text-[#231F20] opacity-50">5.</label>
         <input type="text" class="w-[80%] p-[2%]" placeholder="Add name company...">
       </div>
-      <div class="flex justify-between w-[90%]">
+      <div class="flex flex-col gap-y-5 md:flex-row md:justify-between w-[90%]">
         <button>
-          <svg width="80" height="48" viewBox="0 0 80 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-            class="inline">
+          <svg width="80" height="48" viewBox="0 0 80 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="inline">
             <rect width="80" height="48" rx="8" fill="white" />
             <path
               d="M45.1024 24.15H41.2864V28.002H39.7204V24.15H35.9224V22.692H39.7204V18.822H41.2864V22.692H45.1024V24.15Z"
               fill="#231F20" />
           </svg>
-          <span class="ml-4 Gilroy uppercase text-xs leading-3 text-[#231F20] font-semibold tracking-[1px]"> Add more field</span></button>
-        <input type="submit" class="bg-[#97AD1D] h-12 w-36 rounded-lg Gilroy text-xs leading-3 font-semibold text-white uppercase tracking-[1px]" value="submit">
+          <span class="lg:ml-4 Gilroy uppercase text-xs leading-3 text-[#231F20] font-semibold tracking-[1px]"> Add more
+            field</span></button>
+        <input type="submit"
+          class="bg-[#97AD1D] h-12 w-36 rounded-lg Gilroy text-xs leading-3 font-semibold text-white uppercase tracking-[1px]"
+          value="submit">
       </div>
     </form>
   </article>
@@ -476,7 +492,7 @@
   <article class="flex justify-between flex-wrap w-[80%] m-auto pt-[10%]">
     <div class="flex flex-col gap-6">
       <p class="text-base font-normal text-[#231F20] opacity-50 Poppins">Explore our</p>
-      <h2 class="text-5xl leading-[64px] font-semibold tracking-tight text-[#231F20] Gilroy">Market Insights & News
+      <h2 class="text-[40px] lg:text-5xl leading-[50px] lg:leading-[64px] font-semibold tracking-normal lg:tracking-[-2px] text-[#231F20] Gilroy">Market Insights & News
       </h2>
     </div>
 
@@ -491,7 +507,7 @@
     </button>
 
   </article>
-  <article class="w-[80%] flex flex-wrap justify-between m-auto">
+  <article class="w-[80%] flex flex-col lg:flex lg:flex-row lg:flex-wrap lg:justify-between m-auto">
     <div class="basis-[20%]">
       <p class="Poppins text-2xl font-medium leading-8 text-[#231F20]">Market Insights</p>
       <p class="text-[#97AD1D] font-medium text-2xl leading-8 underline decoration-[#97AD1D] Poppins mt-5">News</p>
@@ -499,7 +515,7 @@
     <div>
 
     </div>
-    <div class="basis-[70%] grid grid-cols-2 gap-[10px]">
+    <div class="basis-[70%] grid grid-cols-1 gap-5 mt-5 lg:grid-cols-2 lg:gap-[10px]">
       <div class="border border-[#F0F0F0] flex flex-col gap-[10px] p-8">
         <div class="flex flex-wrap justify-start">
           <p class="Poppins text-[#231F20] text-sm leading-3 font-normal">News</p>
@@ -546,10 +562,10 @@
 <!-- *********************** footer **************************** -->
 
 
-<footer class=" bg-[#102842] flex flex-col relative">
+<footer class=" bg-[#102842] flex flex-col relative overflow-x-hidden">
 
   <section class="grid grid-cols-1 gap-0 lg:flex lg:flex-wrap border-b border-opacity-10 border-white ">
-    <article class="lg:border-r lg:basis-[30%] p-10 border-opacity-10 border-white">
+    <article class="lg:border-r lg:basis-[30%] p-10 border-opacity-10 border-white border-b lg:border-b-0">
       <div class="container mx-auto">
       <img src="../../assets/Symbolslogo.png" alt="cover" class="m-auto lg:mt-[18%] lg:pt-[8%]">
     </div>
@@ -558,8 +574,8 @@
       <div class="container mx-auto">
       <h2 class="Gilroy font-semibold text-4xl leading-[64px] capitalize text-white w-full">Join our newsletter</h2>
       <form class="grid grid-cols-1">
-        <div class="border-b flex justify-between border-white border-opacity-10">
-        <input type="email" placeholder="Enter your email address" class="p-[2%] bg-[#102842]">
+        <div class="border-b flex justify-between border-white border-opacity-10 relative">
+        <input type="email" placeholder="Enter your email address" class="p-[2%] bg-[#102842] focus:placeholder-shown:border-b focus:placeholder-shown:border-orange-500 focus:placeholder-shown:pt-0 focus:outline-none  ">
         <div class="mt-[2%]"> 
         <svg width="27" height="10" viewBox="0 0 27 10" fill="none" xmlns="http://www.w3.org/2000/svg"
         class="inline mr-4 w-[16%]">
@@ -568,9 +584,9 @@
       <input type="submit" value="Subscribe" class="Poppins text-white text-sm leading-[18px] font-normal">
     </div>
     </div>
-    <div class="mt-[3%] flex items-center">
-        <input type="checkbox" name="I agree with GDPR policy" checked class="bg-white opacity-10 w-6 h-6 rounded-[4px]">
-        <label class="ml-2 Poppins text-sm leading-[14px] font-normal text-white">I agree with GDPR policy</label>
+    <div class="mt-[3%] flex items-center relative">
+        <input id="check_privacy" type="checkbox" name="I agree with GDPR policy" checked class="bg-white w-6 h-6 rounded-[4px] checkbox_footer">
+        <label for="check_privacy" class="ml-2 Poppins text-sm leading-[14px] font-normal text-white label_privacy">I agree with GDPR policy</label>
       </div>
       </form>
     </div>
@@ -581,14 +597,14 @@
   <section class="lg:flex lg:flex-wrap lg:gap-0 border-b border-opacity-10 border-white grid grid-cols-1 gap-0">
     <article class="lg:border-r lg:basis-[30%] border-opacity-10 border-white p-12 pb-24 border-b">
       <div class="container mx-auto grid grid-cols-1 gap-10 ">
-      <p class="Poppins text-xs leading-[10px] font-normal text-white opacity-50">Contact Information</p>
-      <address class="Gilroy text-white text-lg leading-6 font-semibold w-[64%]">
+      <p class="Poppins text-xs leading-[10px] font-normal text-white opacity-50 not-italic">Contact Information</p>
+      <address class="Gilroy text-white text-lg leading-6 font-semibold w-[64%] not-italic">
         Switzerland, Geneva, 11, bd James fazy 1201
       </address>
-      <address class="Gilroy text-white text-lg leading-6 font-semibold">
+      <address class="Gilroy text-white text-lg leading-6 font-semibold not-italic">
         <a href="mailto:info@conser.ch">info@conser.ch</a>
       </address>
-      <address class="Gilroy text-white text-lg leading-6 font-semibold">
+      <address class="Gilroy text-white text-lg leading-6 font-semibold not-italic">
         <a href="tel:+41 22 907 71 00">+41 22 907 71 00</a>
       </address>
       <nav class="flex justify-start gap-10">
